@@ -87,6 +87,40 @@ body::before {
   a:hover {
     background: rgba(255,255,255,0.15);
   }
+    .projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-card span {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+    
 </style>
 </head>
 <body>
@@ -107,6 +141,31 @@ body::before {
     <a href="https://www.youtube.com/@FromZerotoDungeon">YouTube</a>
     <a href="https://www.patreon.com/cw/FromZerotoDungeon/">Patreon</a>
     <a href="mailto:fromzerotodungeon@gmail.com?subject=Contatto dal sito FromZeroToDungeon">Contattami</a>
+    <h2>Progetti in evidenza</h2>
+
+<div class="projects">
+
+  <a class="project-card" href="https://www.instagram.com/p/DXmi1CKjRyN/">
+    <img src="Battlemap.jpg" alt="Battle Map">
+    <span>Battle Map</span>
+  </a>
+
+  <a class="project-card" href="https://www.instagram.com/p/DYchg4PNBuW/">
+    <img src="Fireball.jpg" alt="Fireball">
+    <span>Fireball</span>
+  </a>
+
+  <a class="project-card" href="https://www.instagram.com/p/DYNLv2Gtw_C/">
+    <img src="Fumo.jpg" alt="Macchina del Fumo">
+    <span>Fumo</span>
+  </a>
+
+  <a class="project-card" href="https://www.instagram.com/p/DPwSLyejMnY/">
+    <img src="Modello.jpg" alt="Modello">
+    <span>Grimorio</span>
+  </a>
+
+</div>
   </div>
 </div>
 
