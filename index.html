@@ -27,7 +27,11 @@
 
   /* Overlay scuro */
 body::before {
-  display: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 0;
 }
 
   .container {
@@ -76,12 +80,12 @@ body::before {
 <body>
 
 <div class="container">
-  <h1>FromZeroToDungeon</h1>
+  <h1>From Zero to Dungeon</h1>
 
 <p>
-  Benvenuti nel dungeon.
+  Benvenuti!
   <br><br>
-  Qui trasformo idee in oggetti, prop e accessori per portare più immersione al tavolo da gioco.
+ Trasformo idee in oggetti, prop e accessori per portare più immersione al tavolo da gioco.
 </p>
 
   <div class="links">
